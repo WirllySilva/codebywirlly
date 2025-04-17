@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="education.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Conteúdo específico de cada página vai aqui -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<main class="container">
+    <section class="portfolio-section">
+        <h2>Meus Trabalhos</h2>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="faculdade">Faculdade</button>
+            <button class="filter-btn" data-filter="pessoal">Pessoal</button>
+            <button class="filter-btn" data-filter="profissional">Profissional</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="faculdade">
+                <img src="images/projeto1.jpg" alt="Projeto 1">
+                <div class="portfolio-overlay">
+                    <h3>Projeto da Faculdade</h3>
+                    <p>Descrição breve do projeto</p>
+                    <a href="#" class="portfolio-link">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <!-- Adicione mais itens de portfólio conforme necessário -->
+        </div>
+    </section>
+</main>
