@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Sobre Mim - Meu Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1>Meu Portfólio</h1>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="about.html" class="active">Sobre Mim</a></li>
                     <li><a href="education.html">Formação</a></li>
                     <li><a href="portfolio.html">Portfólio</a></li>
                     <li><a href="contact.html">Contato</a></li>
@@ -21,32 +24,62 @@
             </nav>
         </div>
     </header>
-        <main class="container">
-            <section class="about-section">
-                <h2>Sobre Mim</h2>
-                <img src="images/foto-perfil.jpg" alt="Minha foto" class="profile-img">
-                <p>Olá! Sou Wirlly, estudante de engenharia de software e entusiasta apaixonado por tecnologia. <br><br> </p>
-                
-                <h3>Minha Jornada</h3>
-                <p>Desde criança já mexia com computadores e ficava curioso sobre como as coisas funcionavam. Sempre estudei sobre tecnologia,
-                porém minha carreia seguiu outro caminho. Foi quando um amigo me chamou para conhecer melhor a área de TI, daí decidi voltar 
-                aos estudos e focar 100% do meu tempo a aprender algumas tecnologias como Java e seus frameworks, banco de dados relacionais e
-                não relacionais e também tecnoloias web como Html, CSS, JavaScript e React. <br> Atualmente estou cursando o terceiro período 
-                do bacharelado em Engenharia de Software. Estou desenvolvendo um projeto que faz parte da minha atividade extensionista que você 
-                pode conferir na página de portfólio, onde demonstro na prática os conhecimentos que venho adquirindo durante minha formação. <br><br>
-                Neste site, mostro um pouco dos meus projetos e do que venho aprendendo nessa nova fase. Acredito que a tecnologia pode mudar a 
-                vida das pessoas para melhor, e isso me motiva a continuar aprendendo todos os dias!"<br><br>
-            </p>
-            </section>
-            <section class="cta-section">
-                <h3>Gostou do que viu até aqui?</h3>
-                <p>Conheça meus trabalhos ou entre em contato para conversarmos!</p>
-                <div class="cta-buttons">
-                    <a href="portfolio.html" class="btn btn-portfolio">Ver Meu Portfólio</a>
-                    <a href="contact.html" class="btn btn-contact">Entrar em Contato</a>
+    <main class="container">
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/foto-perfil.jpg" alt="Minha foto" class="profile-img">
                 </div>
-            </section>
-        </main>
+                <div class="about-text">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá! Sou Wirlly, estudante de engenharia de software e entusiasta apaixonado por tecnologia.
+                        <br><br>
+                    </p>
+
+                    <h3>Minha Jornada</h3>
+                    <p>Desde criança já mexia com computadores e ficava curioso sobre como as coisas funcionavam. Sempre
+                        estudei sobre tecnologia,
+                        porém minha carreia seguiu outro caminho. Foi quando um amigo me chamou para conhecer melhor a
+                        área de TI, daí decidi voltar
+                        aos estudos e focar 100% do meu tempo a aprender algumas tecnologias como Java e seus
+                        frameworks, banco de dados relacionais e
+                        não relacionais e também tecnoloias web como Html, CSS, JavaScript e React. <br> Atualmente
+                        estou cursando o terceiro período
+                        do bacharelado em Engenharia de Software. Estou desenvolvendo um projeto que faz parte da minha
+                        atividade extensionista que você
+                        pode conferir na página de portfólio, onde demonstro na prática os conhecimentos que venho
+                        adquirindo durante minha formação. <br><br>
+                        Neste site, mostro um pouco dos meus projetos e do que venho aprendendo nessa nova fase.
+                        Acredito que a tecnologia pode mudar a
+                        vida das pessoas para melhor, e isso me motiva a continuar aprendendo todos os dias!"<br><br>
+                    </p>
+
+                    <h3>Hobbies e Interesses</h3>
+                    <ul class="hobbies-list">
+                        <li><i class="fas fa-skating"></i>Skating</li>
+                        <li><i class="fas fa-motorcycle"></i>Motociclismo</li>
+                        <li><i class="fas fa-car"></i>Dirigir</li>
+                        <li><i class="fas fa-headphones"></i>Música</li>
+                        <li><i class="fas fa-plane-departure"></i>Viajar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h3>Gostou do que viu até aqui?</h3>
+            <p>Conheça meus trabalhos ou entre em contato para conversarmos!</p>
+            <div class="cta-buttons">
+                <a href="portfolio.html" class="btn btn-portfolio">
+                    <i class="fas fa-briefcase"></i> Ver Meu Portfólio
+                </a>
+                <a href="contact.html" class="btn btn-contact">
+                    <i class="fas fa-envelope"></i> Entrar em Contato
+                </a>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <p>&copy; <span id="current-year"></span> Meu Portfólio. Todos os direitos reservados.</p>
@@ -55,5 +88,5 @@
 
     <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>
