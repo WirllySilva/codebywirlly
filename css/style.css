@@ -420,6 +420,70 @@ footer p {
     color: var(--dark-color);
 }
 
+.highlights {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    background: linear-gradient(to right, #f8f9fa, #e9f5ff);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.highlight-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    cursor: pointer;
+}
+
+.highlight-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.highlight-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.highlight-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.highlight-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.highlight-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Animação da hero section */
 @keyframes fadeInUp {
     from {
@@ -670,7 +734,7 @@ footer p {
     transform: translateX(5px);
 }
 
-/* ===== PÁGINA CONTATO ===== */
+/* =================================== PÁGINA CONTATO =================================== */
 .contact-section {
     background-color: var(--white);
     padding: 50px;
@@ -756,7 +820,7 @@ footer p {
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
 
-textarea.form-control {
+.textarea.form-control {
     min-height: 150px;
     resize: vertical;
 }
@@ -870,6 +934,12 @@ textarea.form-control {
     
     .hero-title h2 {
         font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .highlights {
+        flex-direction: column;
     }
 }
 
