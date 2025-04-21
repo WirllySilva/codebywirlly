@@ -1,0 +1,243 @@
+/* Animação */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 40px 0;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.about-img {
+    flex: 0 0 300px;
+    position: relative;
+}
+
+.about-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px dashed #3498db;
+    border-radius: 15px;
+    top: 15px;
+    left: 15px;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.profile-img:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0 #3498db, 10px 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.about-text h3 {
+    color: #2c3e50;
+    margin: 25px 0 15px;
+    font-size: 1.4em;
+}
+
+.hobbies-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.hobbies-list li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hobbies-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hobbies-list i {
+    margin-right: 10px;
+    color: #3498db;
+    font-size: 1.2em;
+}
+
+.cta-section {
+    background-color: #3498db;
+    text-align: center;
+    padding: 50px 30px;
+    margin: 50px 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: white;
+    border-radius: 10px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.cta-section.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cta-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-section .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    min-width: 180px;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn-portfolio {
+    background-color: white;
+    color: #2c3e50;
+    border: 2px solid white;
+}
+
+.btn-contact {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-portfolio:hover {
+    background-color: rgba(255,255,255,0.9);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-contact:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        gap: 30px;
+    }
+    
+    .about-img {
+        flex: 0 0 250px;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-img {
+        flex: 1;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 30px 20px;
+    }
+    
+    .hobbies-list {
+        grid-template-columns: 1fr;
+    }
+}
+
