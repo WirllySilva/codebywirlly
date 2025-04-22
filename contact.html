@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codebywirlly</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -22,50 +26,57 @@
     </header>
     <main class="container">
         <section class="contact-section">
-            <h2>Entre em Contato</h2>
-            
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Entre em Contato</h2>
+
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    <p><strong>Email:</strong> seu.email@exemplo.com</p>
-                    <p><strong>Telefone:</strong> (00) 12345-6789</p>
-                    
+                    <h3><i class="fas fa-info-circle"></i> Informações de Contato</h3>
+                    <p><i class="fas fa-envelope"></i> wirlly.silva@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (81) 9 9290-4900</p>
+
                     <div class="social-links">
-                        <a href="#" class="social-icon"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-                        <a href="#" class="social-icon"><img src="images/github-icon.png" alt="GitHub"></a>
-                        <a href="#" class="social-icon"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/in/wirlly-pereira/" class="social-icon" title="LinkedIn"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/WirllySilva" class="social-icon" title="GitHub" target="_blank"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
-                    <h3>Envie uma Mensagem</h3>
+                    <h3><i class="fas fa-paper-plane"></i> Envie uma Mensagem</h3>
                     <form id="contactForm">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/tks.html">
+
                         <div class="form-group">
                             <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" class="form-control" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" class="form-control" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="subject">Assunto:</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message">Mensagem:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" class="form-control textarea"
+                                required></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn">Enviar Mensagem</button>
+
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <p>&copy; <span id="current-year"></span> <strong>codebywirlly</strong>. Todos os direitos reservados.</p>
@@ -74,5 +85,5 @@
 
     <script src="js/script.js"></script>
 </body>
-</html>
 
+</html>

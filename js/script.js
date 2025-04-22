@@ -59,11 +59,19 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Aqui você pode adicionar código para enviar o formulário
-            // Por exemplo, usando Fetch API ou simplesmente exibindo uma mensagem
-            
-            alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
-            contactForm.reset();
+            // Envia o formulario e mensagem viaFormSubmit.co usando Fetch API
+            fetch('https://formsubmit.co/ajax/wirlly.silva@gmail.com', {
+                method: 'POST',
+                body: new FormData(contactForm)
+            })
+            .then(response => response.json())
+            .then(data => {                
+                window.location.href = 'http://127.0.0.1:5500/tks.html';
+            })
+            .catch(error => {
+                alert('Ocorreu um erro. Tente novamente mais tarde.');
+                console.error(error);
+            });
         });
     }
 });
