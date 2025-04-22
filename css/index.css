@@ -185,6 +185,7 @@
     }
 }
 
+/* responsividade para movél */
 @media (max-width: 768px) {
     .hero-header {
         flex-direction: column;
@@ -209,7 +210,7 @@
     }
     
     .hero-image {
-        order: -1; /* Imagem acima em mobile */
+        order: -1;
         margin-bottom: 15px;
     }
     

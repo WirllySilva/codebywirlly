@@ -58,7 +58,7 @@ nav ul li a.active {
     color: var(--secondary-color);
 }
 
-
+/* Responsividade para movél */
 @media (max-width: 768px) {
     header {
         padding: 10px 0;

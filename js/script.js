@@ -1,5 +1,5 @@
 
-// Atualiza o ano no footer
+// Atualiza o ano no footer automaticamente para o ano atual.
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-  // Filtro do portfólio
+  // Filtro do portfólio, Não foi implementado ainda na página por não possuir muitos trabalho.
   const filterButtons = document.querySelectorAll('.filter-btn');
   const portfolioItems = document.querySelectorAll('.portfolio-item');
   
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-// Formulário de contato
+// Formulário de contato, envia um e-mail para wirlly.silva através do fomsubmit.co
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     
