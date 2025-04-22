@@ -47,7 +47,7 @@ Sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**!
 
 ## 🔗 Links Úteis
 
-- 🌐 **Acesse Online:** [https://wirllysilva.github.io](https://wirllysilva.github.io)
+- 🌐 **Acesse Online:** [https://wirllysilva.github.io/codebywirlly](https://wirllysilva.github.io/codebywirlly/)
 - 📧 **Contato:** wirlly.silva@gmail.com
 
 ---
