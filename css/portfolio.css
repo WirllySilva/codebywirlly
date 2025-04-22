@@ -56,4 +56,7 @@
     color: #888;
     border: 2px dashed #ccc;
   }
-  
+
+img {
+    height: 300px;
+}
