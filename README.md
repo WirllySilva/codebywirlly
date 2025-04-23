@@ -24,21 +24,6 @@
 
 ---
 
-## 🛠 Como Rodar Localmente?
-
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-portfolio.git
-
-# Navegue até a pasta do projeto
-cd seu-portfolio
-
-# Abra o arquivo no navegador
-open index.html  # ou arraste o arquivo para o navegador
-```
-
----
-
 ## 📬 Quer Contribuir ou Reportar um Bug?
 
 Sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**!
@@ -58,7 +43,7 @@ Sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**!
 
 ---
 
-Feito com ❤️ por **Wirlly Silva** | 🚀 2025
+Feito por **Wirlly Silva** | 🚀 2025
 
 <div align="center">
   <sub>🌟 Se gostou, deixe uma ⭐ no repositório!</sub>
