@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => response.json())
             .then(data => {                
-                window.location.href = 'http://127.0.0.1:5500/tks.html';
+                window.location.href = 'tks.html';
             })
             .catch(error => {
                 alert('Ocorreu um erro. Tente novamente mais tarde.');
